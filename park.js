@@ -68,5 +68,20 @@ Park.prototype.removeSpecies = function(speciesRemove){
       return this.dinosaurs
     };
 
+// below isn't working I got part way through but I would take ages to do it and think it is what we are going to do today anyway
+// Park.prototype.countTypes = function(){
+//   let count_array = []
+//   let count = 0
+//   diet_array = this.dinosaurs.map(function(dino){
+//     return dino.diet{
+//       //feel like I should be able to use reduce but can't figure out how
+//       for (let dDiet of diet_array){
+//         if(this.dinosaurs.diet === diet){
+//           count = count += 1
+//           }
+//           count_array.push(dDiet, count)
+//   });
+//   return count_array
+// };
 
 module.exports = Park

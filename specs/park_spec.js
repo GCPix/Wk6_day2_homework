@@ -77,12 +77,20 @@ describe('Park', function(){
     assert.strictEqual(actual, 1496500)
 
   });
-  it('Remove all dinosaurs of a particular species', function(){
+  xit('Remove all dinosaurs of a particular species', function(){
     park1.addDinosaur(dino1)
     park1.addDinosaur(dino2)
     park1.addDinosaur(dino3)
 
     actual = park1.removeSpecies('T-Rex')
     assert.deepStrictEqual(actual, [dino1])
+  });
+  it('Provide an object containing each of the diet types and the number of dinosaurs in the park of that diet type', function(){
+    park1.addDinosaur(dino1)
+    park1.addDinosaur(dino2)
+    park1.addDinosaur(dino3)
+
+    actual = park1.countTypes()
+    assert.deepStrictEqual(actual, ['herbivore', 1, 'carnivore', 2])
   });
 });
